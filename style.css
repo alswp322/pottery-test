@@ -1,0 +1,129 @@
+/* 전체 페이지 스타일 */
+body {
+  font-family: 'Gmarket Sans', sans-serif !important;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: url('https://mblogthumb-phinf.pstatic.net/MjAyNTAyMTFfMjMw/MDAxNzM5MjY3MDkxNDY3.OI1OxUBOr4ObwZpbFBTagLt14Wq2Mo6up7Vvb6_-7Ewg.lvW_lAuioU-00sLfsb043UBXw3y_0_irI830LxHp3l8g.JPEG/IMG_1022.jpg?type=w800') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* 컨테이너 배경 투명 */
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background: transparent;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+h1, h2, p, button, label, input {
+  font-family: 'Gmarket Sans', sans-serif !important;
+}
+
+/* 제목 이미지 스타일 */
+.title-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* 스타트 버튼 이미지 스타일 */
+.start-button {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.start-button:hover {
+  opacity: 0.8;
+}
+
+/* input[type="radio"] 숨기기: display:none 대신 */
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+/* 페이지 공통 스타일 (start, test, result) */
+.page {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* 시작 페이지는 처음에 보이도록 */
+#start-page {
+  display: flex;
+}
+
+/* 질문 컨테이너 */
+.question-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+/* 질문 */
+.question {
+  display: none;
+}
+
+.question.active {
+  display: block;
+}
+
+/* 라디오 버튼과 라벨 간격 및 커서 설정 */
+.question label {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 결과 텍스트 스타일 (중앙 정렬 및 줄 간격 1.8) */
+#result-text {
+  text-align: center;
+  word-break: keep-all;
+}
+
+/* 결과 제목와 상세 내용 스타일 */
+.result-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.result-detail {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* "다시 시작하기" 버튼 스타일 */
+button {
+  background-color: #a785c7;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #8d69b3;
+}
+
+/* 결과 페이지 기본 배경 (계산 후 변경됨) */
+#result-page {
+  background: none;
+}
